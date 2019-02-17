@@ -1,0 +1,34 @@
+// global website variables
+
+// website colours
+$brand-color:;
+$body-bg-color: ;
+$wrapper-bg-color: ;
+// brand variation colours using
+// sass colour functions...
+$brand-color-light:lighten($brand-color, 20);
+$brand-color-dark:darken($brand-color,20);
+
+// text colours
+$text-color-dark: ;
+$text-color-light: ;
+// text styles
+$1h: 1.4; // Global line height 
+$body-font:;
+$heading-font:;
+// layout variables
+$padding:30px;
+// grid variables
+$gutter:2;
+// hover selector
+$hover:'&hover, &:focus, &active';
+
+// media query breakpoints
+// utility function to spit out em values
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em;
+}
+
+// breakpoints
+$tablet: em (1024);
+$phone: em(640);

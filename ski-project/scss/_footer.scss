@@ -1,0 +1,11 @@
+// footer styles
+.top-footer{
+    max-width: 860px;
+    background-color: $wrapper-bg-color;
+   @include center;
+
+//    or @include center: (30px, 30px);
+}
+
+
+

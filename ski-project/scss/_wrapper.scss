@@ -1,0 +1,12 @@
+// wrapper styles
+.wrapper{
+    max-width: 860px;
+    background-color: $wrapper-bg-color;
+   @include center;
+
+//    or @include center: (30px, 30px);
+}
+
+// .wrapper img{
+//     @include center(0,0, true);
+// }

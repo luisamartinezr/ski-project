@@ -1,0 +1,13 @@
+// typographic styles
+body{
+    font-family: $body-font;
+    line-height: $1h;
+}
+
+h1,h2,h3, nav a, table{
+    font-family: $heading-font;
+}
+
+h1,h2,h3, p{
+    margin-top: 0;
+}
