@@ -3,3 +3,14 @@
 // center mixin
 // it centers element using margin auto
 
+@mixin center($top:0, $bottom: 0, $is-img: false) {
+    margin: {
+        left: auto;
+        right: auto;
+        top: $top;
+        bottom: $bottom; 
+    }
+    @if($is-img == true){
+        display: block;
+    }
+}

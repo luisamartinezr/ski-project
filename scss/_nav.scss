@@ -27,21 +27,19 @@ nav{
 
     a{
         display:block;
-        color: $text-color-light;
+        color: $text-color;
         text-decoration:none;
         border-right: height-$border-size;
         line-height: $height;
         text-align: center;
-
+/*
         &.active-page{
-            background-color:;
-
-
-    }
+            background-color:; 
+        } */
     // we want to put the exact value. This is not a property value for this reason we have to put #{}. 
     // In this way we write as a STRING because this is a Selector.
         #{$hover} {
-        background-color: ;
+        background-color: $brand-color-accent;
     }
 
    
