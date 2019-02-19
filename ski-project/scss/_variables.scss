@@ -1,25 +1,34 @@
 // global website variables
 
 // website colours
-$brand-color:;
-$body-bg-color: ;
-$wrapper-bg-color: ;
+
+$body-bg-color: white;
+$wrapper-bg-color: white;
 // brand variation colours using
 // sass colour functions...
-$brand-color-light:lighten($brand-color, 20);
-$brand-color-dark:darken($brand-color,20);
+
+$brand-color-light: #d1e3df;
+$brand-color-dark: #233349;
+$brand-color-accent: #e4bd59;
 
 // text colours
-$text-color-dark: ;
-$text-color-light: ;
-// text styles
-$1h: 1.4; // Global line height 
-$body-font:;
-$heading-font:;
+$text-color: black;
+
+// typography styles
+ 
+$body-font:'Open Sans', sans-serif;
+@font-face {
+    font-family: 'bourbon-grotesque';
+    src: url('../fonts/bourbon-grotesque.woff2') format('woff2');
+}
+$heading-font:'bourbon-grotesque';
+
 // layout variables
 $padding:30px;
+
 // grid variables
 $gutter:2;
+
 // hover selector
 $hover:'&hover, &:focus, &active';
 
