@@ -1,49 +1,42 @@
-nav{
-    // locally scoped variables
-    // these are only available inside
-    // this module
-    $height: 40px;
+
+nav {
+    // this are the styles for the desktop nav
+    // won't be visible in mobile - mobile styles are the hamburguer
+
+    $height: 604px;
     $border-size: 1px;
+    $border: 1px solid;   // (below border is a variable 1px solid white)
+    padding: 0;
 
-    // (below border is a variable 1px solid white)
-    $border: 1px solid;
-
-    background-color: $brand-color-dark;
-    height:  $height;
-    border-top: $border;
-    
+    background-color: white;
+    max-width: 50%;
 
     ul{
-       
-
         display: flex;
+        list-style: none;
+        @include flatten;
     }
-
-    
 
     li{
         flex:1;
+        
     }
 
-    a{
+    a {
         display:block;
         color: $text-color;
         text-decoration:none;
-        border-right: height-$border-size;
         line-height: $height;
         text-align: center;
-/*
-        &.active-page{
-            background-color:; 
-        } */
-    // we want to put the exact value. This is not a property value for this reason we have to put #{}. 
-    // In this way we write as a STRING because this is a Selector.
-        #{$hover} {
-        background-color: $brand-color-accent;
+        background-color: white;
+
+        #{$hover}{
+            background-color: $brand-color-accent;
+        }
     }
 
    
-    }
+    
 
 
 }

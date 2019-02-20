@@ -14,3 +14,14 @@
         display: block;
     }
 }
+
+// For lists
+
+@mixin flatten($is-list: false){
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    @if($is-list == true){
+        list-style: none;
+    }
+}
