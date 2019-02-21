@@ -2,13 +2,17 @@ body{
     background-color: $body-bg-color;
     max-width: 100%;
    
-    h1{
+    h1, h2 {
         text-align: center;
     }
     p {
         max-width: 100%;
         @include center;
         padding: $padding;
+    }
+    main{
+        padding: $padding;
+        max-width: 1200px;
     }
 }
 

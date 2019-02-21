@@ -1,10 +1,19 @@
 // footer styles
-.top-footer{
+footer{
     max-width: 100%;
-    background-color: $wrapper-bg-color;
-   @include center;
+    @include center;
 
-//    or @include center: (30px, 30px);
+  
+    .top-footer {
+        background-color: $brand-color-light;
+        height: 100px;
+        padding: $padding;
+    }
+
+    .low-footer {
+        background-color: $brand-color-dark;
+        padding: $padding;
+    }
 }
 
 
