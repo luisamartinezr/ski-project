@@ -21,7 +21,9 @@
         </div>
 
         <nav>
-          
+          <div class="logo">
+            logo 
+          </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -39,12 +41,22 @@
 
         <div class="banner">
 
-            <img src="images/thomas-beckett-mountains-retina.jpg" alt="Vancouver skyline"> 
+                <img src="images/gabriel-santiago-retina.jpg" 
+                     alt="Panoramic view of ski lift and mountains"
+
+                     srcset="images/gabriel-santiago-small.jpg 400w,
+                        images/gabriel-santiago-medium.jpg 800w,
+                        images/gabriel-santiago-large.jpg 1200w,
+                        images/gabriel-santiago-retina.jpg"
+
+                     sizes="(max-width: 420px) calc(100vw - 60px),
+                        (max-width: 680px) calc(48.5vw - 60px),
+                        (max-width: 1200px) calc(23.5vw - 60px),
+                        282px">
                 
        
             <h1>Enjoy winter with us</h1>
                   
-            
         </div>
 
         <main>
@@ -56,7 +68,76 @@
 
             <section class="popular-activities">
                 <h2>Check out our most common activities</h2>
+
+                <div class="grid-container">
+
+                    <div class="image-container image-container01">
+                        <a href="#0">
+
+                                <img src="images/placeholder.jpg" alt="Woman skiing" class="image">
+        
+                                <div class="image-overlay">
+                                    <div class="image-text">
+                                        <h3>Text that goes over image</h3>
+                                    </div>
+                                </div>
+                        </a>
+                    </div>
+                    
+                    <div class="image-container image-container02">
+                        <a href="#0">
+
+                            <img src="images/grid-nicolai-berntsen-large.jpg" alt="Woman skiing" class="image">
+
+                            <div class="image-overlay">
+                                <div class="image-text">
+                                    <h3>Text that goes over image</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="image-container image-container03">
+                        <a href="#0">
+                            <img src="images/placeholder.jpg" alt="Woman skiing" class="image">
+    
+                            <div class="image-overlay">
+                                <div class="image-text">
+                                    <h3>Text that goes over image</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container image-container04">
+                        <a href="#0">
+                            <img src="images/placeholder2.jpg" alt="Woman skiing" class="image">
+    
+                            <div class="image-overlay">
+                                <div class="image-text">
+                                   <h3>Text that goes over image</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container image-container05" class="image">
+
+                        <a href="activities.html"> <h3>see <br> more </h3> </a>
+                             
+                    </div>
+    
+                </div>
+
+
+                </div> <!--grid container end-->
+
+
             </section>
+
+
+
         </main>
     
 

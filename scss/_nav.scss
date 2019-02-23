@@ -6,10 +6,19 @@ nav {
     $height: 60px;
     $border-size: 1px;
     $border: 1px solid;   // (below border is a variable 1px solid white)
-    padding: 0;
-
+    padding: 0 $padding;
+    display: flex;
+    align-items: center;
     background-color: white;
     max-width: 50%;
+
+    .logo { // temporary place holder for logo
+        height: $height;
+        line-height: $height;
+        padding: 0;
+        padding-right: $padding;
+        background-color: grey;
+    }
 
     ul{
         display: flex;
@@ -31,7 +40,7 @@ nav {
         background-color: white;
 
         #{$hover}{
-            background-color: $brand-color-accent;
+            background-color: $brand-color-light;
         }
     }
 

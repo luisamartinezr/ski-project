@@ -10,10 +10,16 @@ body{
         @include center;
         padding: $padding;
     }
-    main{
-        padding: $padding;
-        max-width: 1200px;
-    }
+    
 }
 
 
+main{
+    padding: $padding;
+    max-width: 1200px;
+    @include center;
+}
+
+.popular-activities {
+    margin-top: 50px;
+}
