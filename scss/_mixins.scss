@@ -25,3 +25,25 @@
         list-style: none;
     }
 }
+
+@mixin list {
+    list-style: none;
+}
+
+// Flex layout row
+
+@mixin flex-layout-row {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+// Media Query Mixin
+@mixin mq($w) {
+    @media (max-width: $w) {
+        @content;
+    }
+}
+
+
