@@ -8,11 +8,10 @@ body{
     p {
         max-width: 100%;
         @include center;
-        padding: $padding;
+        padding: 8px $padding;
     }
     
 }
-
 
 main{
     padding: $padding;
@@ -20,6 +19,22 @@ main{
     @include center;
 }
 
+.intro {
+    text-align: center;
+    @include center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 90%;
+}
+
 .popular-activities {
     margin-top: 50px;
+}
+
+.about-images {
+    padding: $padding;
+}
+
+.about-story {
+    
 }

@@ -6,6 +6,7 @@ nav {
     $height: 60px;
     $border-size: 1px;
     $border: 1px solid;   // (below border is a variable 1px solid white)
+
     padding: 0 $padding;
     display: flex;
     align-items: center;
@@ -24,11 +25,12 @@ nav {
         display: flex;
         list-style: none;
         @include flatten;
+        justify-content: space-between;
+       
     }
 
     li{
         flex:1;
-        
     }
 
     a {
@@ -38,6 +40,7 @@ nav {
         line-height: $height;
         text-align: center;
         background-color: white;
+        padding: 0 10px;
 
         #{$hover}{
             background-color: $brand-color-light;
