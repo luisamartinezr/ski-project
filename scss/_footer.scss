@@ -2,7 +2,6 @@
 footer{
     max-width: 100%;
     @include center;
-    
 
     .top-footer {    
         display: flex;
@@ -53,14 +52,27 @@ footer{
     }
     
     .social-media {
-        ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-           width: 200px;
-         
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
     }
+
+    .map{
+        padding-right: $padding;
+    }
+
+    .site-map ul {
+        @include flatten;
+        
+    }
+    .site-map a{
+        font-size: 1em;
+        align-items: left;
+        justify-content: left;
+        line-height: 30px;
+        
+    } 
 
     .thanks {
         padding: $padding;
@@ -94,14 +106,14 @@ footer{
             align-items: center;
         }
 
-        .social-media {
-          padding-left: 40%;
-        }    
+          
 
         .thanks {
              flex-direction: row;
         }
     }
+
+   
   
 }
 
