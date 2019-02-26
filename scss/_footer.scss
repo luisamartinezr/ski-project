@@ -30,7 +30,7 @@ footer{
         color: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
 
         a {
             text-decoration: none;
@@ -47,6 +47,12 @@ footer{
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 20px;
+        padding: 0 $padding;
+
+        ul {
+            padding: 0;
+            padding-right: 70px;
+        }
 
 
     }
@@ -62,8 +68,13 @@ footer{
         padding-right: $padding;
     }
 
+    .site-map {
+        padding: $padding;
+    }
     .site-map ul {
         @include flatten;
+       
+    
         
     }
     .site-map a{
