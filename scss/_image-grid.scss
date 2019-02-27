@@ -59,6 +59,54 @@
     }
 }
 
+
+// ..................................
+//.....GRID CONTAINER 2..............
+
+.grid-container2 {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-areas:
+    ".events .ski-lessons"
+    ".winter_activities .spring_activities";
+}
+
+.events{
+    grid-area: 1
+}
+
+.ski_lessons{
+    grid-area: 2
+}
+
+.winter_activities{
+
+    grid-area: 3
+}
+
+.spring_activities{
+    grid-area: 4
+}
+
+.grid-container2 {
+    position: relative;
+    max-width: 100%;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+
 //Responsive screens
 
 @media (min-width: $tablet-portait){
@@ -97,3 +145,5 @@
     
    
 }
+
+// ......................................../

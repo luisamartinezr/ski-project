@@ -1,4 +1,4 @@
 //  Hamburger menu for mobile 
-$('.hamburger').click (function(){
+$('body').click (function(){
     $(this).toggleClass('open');
   });
