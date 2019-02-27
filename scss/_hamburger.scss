@@ -1,10 +1,121 @@
 // hamburger styles
 .hamburger{
     display: none;
-
- @media (max-width:38.75 em){
-    display: block;
-}
  }
 
+ .open .hamburger{
+   display: none;
+ }
 
+ .open nav{
+   height: auto;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .open nav ul{
+   flex-direction: column;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .hamburger {
+      display: block;
+      border: none;
+      background-color: gray;
+      padding: 0;
+      margin: 0;
+      width: 60px;
+      height: 60px;
+     /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; 
+    }
+  
+    .hamburger-icon {
+      color: white;
+      line-height: 1;
+      font-size: 2.4em; 
+    }
+  
+    .hamburger:focus,
+    .hamburger-icon:focus {
+      outline: none; 
+    }
+  
+    .hamburger:focus .hamburger-icon {
+      outline: 5px solid #69c1db; 
+    }
+  
+    .hamburger-text {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; 
+    }
+  
+    header {
+      flex-wrap: wrap;
+      align-items: center;
+      height: auto;
+      width: 100%;
+    }
+  
+    nav {
+      height: 0;
+       overflow: hidden; 
+      /* width: 100%; */
+      transition: height 0.3s ease; 
+    }
+  
+    nav ul {
+      display: block; 
+    }
+  
+    nav a {
+      line-height: 40px;
+      border-bottom: 1px solid black;
+      border-top: 1px solid #afafaf; 
+    }
+  
+    nav li:last-child a {
+      border-bottom: 1px solid #afafaf; 
+    }
+  
+   
+  }
+  nav {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 60%; }
+    nav .logo {
+      height: 60px;
+      line-height: 60px;
+      padding: 0;
+      padding-right: 30px;
+      background-color: grey; }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      justify-content: space-between; }
+    nav li {
+      flex: 1; }
+    nav a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      line-height: 60px;
+      text-align: center;
+      background-color: white;
+      padding: 0 10px; }
+      nav a:hover, nav a:focus, nav a:active {
+        background-color: #d1e3df; }
