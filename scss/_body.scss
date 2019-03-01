@@ -40,3 +40,16 @@ main{
     padding: $padding;
 }
 
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    text-align: justify;
+  text-justify: inter-word;
+    @media (min-width: $tablet-portait){
+        grid-template-columns: 1fr 1fr;  
+    }
+
+}
+
