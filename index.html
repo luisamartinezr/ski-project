@@ -15,11 +15,9 @@
 <div class="wrapper">
 
     <header>
-        <!-- <div class="hamburger">
-            <span class="hamburger__top-bun"></span>
-            <span class="hamburger__bottom-bun"></span>
-        </div>  -->
-
+        <div class="logo">
+            logo 
+         </div>
          <button class="hamburger">
                 <div class="hamburger-content">
                     <span class="hamburger-icon" tabindex="-1">
@@ -29,17 +27,11 @@
                         Menu
                     </span>
                 </div>
-        </button>  
-
-       
-          
-          
+        </button>   
         <nav>
-
+            
             <ul>
-                 <div class="logo">
-                    logo 
-                 </div>
+                 
 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -48,7 +40,7 @@
                 <li><a href="book.html">Reservations</a></li>                               
                                     
             </ul>
-            </nav>
+        </nav>
         
         
     </header>
@@ -60,15 +52,10 @@
                 <img src="images/gabriel-santiago-retina.jpg" 
                      alt="Panoramic view of ski lift and mountains"
 
-                     srcset=" images/gabriel-santiago-retina.jpg,
+                     srcset="images/gabriel-santiago-retina.jpg 2400w,
                      images/gabriel-santiago-large.jpg 1200w,
                      images/gabriel-santiago-medium.jpg 800w,
-                     images/gabriel-santiago-small.jpg 400w"
-
-                     sizes="(min-width: 420px) calc(100vw - 60px),
-                        (min-width: 680px) calc(48.5vw - 60px),
-                        (min-width: 1200px) calc(23.5vw - 60px),
-                        282px">
+                     images/gabriel-santiago-small.jpg 400w">
                 
        
             <h1>Enjoy winter with us</h1>
@@ -90,7 +77,14 @@
                     <div class="image-container image-container01">
                         <a href="#0">
 
-                                <img src="images/michal-janek-large.jpg" alt="Children sitting in the snow" class="image">
+                                <img src="images/michal-janek-large.jpg" alt="Children sitting in the snow" class="image"
+                                srcset="images/michal-janek-retina.jpg 2000w,
+                                        images/michal-janek-large.jpg 1000w,
+                                        images/michal-janek-medium.jpg 800w,
+                                        images/michal-janek-small.jpg 400w"
+                                     sizes="(max-width: 668px) calc(100vw - 60px),
+                                           (max-width: 1200px) calc(50vw - 65px),
+                                           565px">
         
                                 <div class="image-overlay">
                                     <div class="image-text">
@@ -103,7 +97,14 @@
                     <div class="image-container image-container02">
                         <a href="#0">
 
-                            <img src="images/grid-nicolai-berntsen-large.jpg" alt="Woman skiing" class="image">
+                            <img src="images/grid-nicolai-berntsen-large.jpg" alt="Woman skiing" class="image"
+                                 srcset="images/grid-nicolai-berntsen-retina.jpg 2000w,
+                                         images/grid-nicolai-berntsen-large.jpg 1000w,
+                                         images/grid-nicolai-berntsen-medium.jpg 600w,
+                                        images/grid-nicolai-berntsen-small.jpg 400w"
+                                 sizes="(max-width: 668px) calc(100vw - 60px),
+                                        (max-width: 1200px) calc(50vw - 65px),
+                                        565px">
 
                             <div class="image-overlay">
                                 <div class="image-text">
@@ -112,11 +113,18 @@
                             </div>
                         </a>
 
-                    </div>
+                    </div> 
 
                     <div class="image-container image-container03">
                         <a href="#0">
-                            <img src="images/daniel-frank-large.jpg" alt="Panoramic view of mountain and ski lift" class="image">
+                            <img src="images/daniel-frank-large.jpg" alt="Panoramic view of mountain and ski lift" class="image"
+                                srcset="images/daniel-frank-retina.jpg 2000w,
+                                        images/daniel-frank-large.jpg 1000w,
+                                        images/daniel-frank-medium.jpg 800w,
+                                        images/daniel-frank-small.jpg 400w"
+                                sizes="(max-width: 668px) calc(100vw - 60px),
+                                       (max-width: 1200px) calc(50vw - 65px),
+                                       565px">
     
                             <div class="image-overlay">
                                 <div class="image-text">
@@ -128,7 +136,14 @@
 
                     <div class="image-container image-container04">
                         <a href="#0">
-                            <img src="images/toa-heftiba-large.jpg" alt="Top view of adults skiing" class="image">
+                            <img src="images/toa-heftiba-large.jpg" alt="Top view of adults skiing" class="image"
+                                 srcset="images/toa-heftiba-retina.jpg 3000w,
+                                         images/toa-heftiba-large.jpg 1500w,
+                                         images/toa-heftiba-medium.jpg 800w,
+                                         images/toa-heftiba-small.jpg 400w"
+                                 sizes="(max-width: 668px) calc(100vw - 60px),
+                                        (max-width: 1200px) calc(50vw - 65px),
+                                        853px">
     
                             <div class="image-overlay">
                                 <div class="image-text">
@@ -168,7 +183,9 @@
         <footer>
         
             <div class="top-footer">
-                <button class="book-now"> Book Now </button>
+                <a href="book.html">
+                    <button class="book-now"> Book Now </button>
+                 </a>
 
             </div>
 
@@ -231,7 +248,6 @@
 
     <script src="script/jquery.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/navbar.js"></script>
     
 
    

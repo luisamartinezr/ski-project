@@ -6,6 +6,11 @@ footer{
     .top-footer {    
         display: flex;
         justify-content: center;
+        a {
+        width: 100%;
+        height: 100px;
+        background-color: $brand-color-light;
+        }
     }
 
     button {
@@ -68,15 +73,19 @@ footer{
         padding-right: $padding;
     }
 
+    .map iframe{
+        width: 240px;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
     .site-map {
         padding: $padding;
     }
     .site-map ul {
-        @include flatten;
-       
-    
-        
+        @include flatten;  
     }
+    
     .site-map a{
         font-size: 1em;
         align-items: left;
@@ -110,6 +119,8 @@ footer{
         @include list;
     }
 
+  
+
    @media (min-width: $tablet-landscape-medium){
         .low-footer {
             flex-direction: row;
@@ -122,14 +133,11 @@ footer{
         .thanks {
              flex-direction: row;
         }
-    }
-    .map iframe{
-        width:240px;
-        height:auto;
-        margin-left:auto;
-        margin-right:auto;
-    }
 
+       
+    
+    }
+   
    
   
 }
