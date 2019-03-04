@@ -46,9 +46,18 @@ main{
     padding-top: $padding;
     padding-bottom: $padding;
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
+    
+    .story2 {
+        margin-top: 30px;
+    }
+
     @media (min-width: $tablet-portait){
         grid-template-columns: 1fr 1fr;  
+
+        .story2 {
+            margin-top: 0;
+         }
     }
 
 }
