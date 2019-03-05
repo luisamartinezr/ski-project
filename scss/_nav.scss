@@ -15,9 +15,8 @@ header {
         background-color: grey;
     }
     @media (min-width: $tablet-portait){
-        
         flex-wrap: nowrap;
-        max-width: 50%;
+        
     }
 
 }
