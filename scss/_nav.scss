@@ -5,15 +5,21 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: white;
+    min-width: 100%;
     
     .logo { 
         margin-left: $padding;
-        height: $heading-height;
+        height: 50px;
         line-height: $heading-height;
-        padding: 0;
+        padding-top: 10px;
         padding-right: $padding;
-        background-color: grey;
+        
+        #{$hover}{
+           fill: $brand-color-light;
+        }
+        
     }
+
     @media (min-width: $tablet-portait){
         flex-wrap: nowrap;
         
@@ -22,12 +28,10 @@ header {
 }
 
 nav {
-
     // Local Variables
     $border-size: 1px;
     $border: 1px solid;
-
-    width: 100%;
+    width: 70%;
     display: none;
 
     ul {
@@ -57,7 +61,7 @@ nav {
        
         ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
         }
     }
 
