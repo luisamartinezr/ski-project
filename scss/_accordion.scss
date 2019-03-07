@@ -13,17 +13,13 @@
    // background-color: $brand-color-light;
     color: white;
     margin-bottom: 30px; 
-    line-height: 75px;
-    
-    
+    line-height: 75px;  
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: $brand-color-light;
-    
-    color: #777;
-    
+    color: #777; 
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -33,40 +29,20 @@
     background-color: white;
     display: none;
     overflow: hidden;
-
-    
   }
 
 
 
   .accordion:after {
     content: '+'; /* Unicode character for "plus" sign (+) */
-    // font-size: 13px;
     font-size: 24px;
-
-    // color: #777;
     color: white;
     float: right;
-    // margin-left: 20px;
-    // padding-left: 20px;
   }
   
   .active:after {
     content: "+"; /* Unicode character for "minus" sign (-) */
-    // padding-left: 20px;
-    // margin-left:20px;
-
-  
   }
 
-  // button{
-  //  width: 80vw;
-  //   height: 20vh;
-  //   background-color: $brand-color-light;
-  //   color:$brand-color-accent;
-  //   margin-bottom: 30px;
-  //   border: 10px solid red;
-
-  // }
 
   

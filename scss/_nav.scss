@@ -16,15 +16,12 @@ header {
         
         #{$hover}{
            fill: $brand-color-light;
-        }
-        
+        }   
     }
 
     @media (min-width: $tablet-portait){
-        flex-wrap: nowrap;
-        
+        flex-wrap: nowrap;    
     }
-
 }
 
 nav {
@@ -64,10 +61,5 @@ nav {
             justify-content: flex-end;
         }
     }
-
-    
-    
-
-
 }
 

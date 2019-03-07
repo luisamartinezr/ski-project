@@ -26,6 +26,8 @@ h2{
     font-size: 1em;
 }
 
+
+// the !important word is because by default Chrome browser was using a yellow color.
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -91,11 +93,7 @@ box-shadow: 0 0 0 30px $brand-color-light inset !important;
     .form-group {
       width: 49%;
     }
-
-    
-
   }
-
 }
   
 
@@ -139,24 +137,6 @@ box-shadow: 0 0 0 30px $brand-color-light inset !important;
 
   }
 
-
-  
-  
-  
-  
-  
-  
-  h2 b {
-    background-color: #5fcf80;
-    color: white;
-    border-radius: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;  
-  }
-  
   label{
       font-weight: bold;
   }
