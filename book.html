@@ -36,7 +36,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="activities.html">Activities</a></li>
-                <!-- <li><a href="services.html">Services</a></li> -->
                 <li><a href="book.html">Reservations</a></li>                              
                                         
             </ul>
@@ -49,69 +48,115 @@
 
         
         <main>
-                <h2>Reserve With Us</h2>
 
-                <form action="./" method="post" name="intro" class="form-intro" id="form-intro">
-                    
-                    
-                
-                    <div class="age">
-                        <h2>Age:</h2>
-                        <label><input type="radio" name="age" value="under 5"> Under 5 years old</label>
-                        <label><input type="radio" name="age" value="under 14">Under 14 years old</label>
-                        <label><input type="radio" name="age" value="under 24">under 25 years old</label>
-                        <label><input type="radio" name="age" value="25 to 65">25 to 65 years old</label>
-                        <label><input type="radio" name="age" value="65 up"> 66 or older</label>
+            <h1>Get Ready With Your Equipment</h1>
+
+
+            <form action="#0" method="post" name="rental-form" class=form-rental id="form-rental">
+
+                <div class="form-section-title your-details-title">
+                    <h2>Your Details</h2>
+                </div>
+
+                <div class="persona">
+                    <div class="form-group form-group-persona">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"> 
                     </div>
-                    <br>
-                
-                        
-                
-                        
-                <div class="equipment">
-                        <h2>Equipment:</h2>
-    
-                    <label for="equipment">Rental Equipment: </label>
-                    <select name="equipment" id="equipment" placeholder=equipment>
-                        <optgroup label="Our equipment">
+                    <div class="form-group form-group-persona">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group form-group-persona">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd"  title="Any 3 numbers" pattern="\d{3}" minlength="3" required>
+                    </div>
+                </div><!-- end persona -->
+
+                <div class="form-section-title age-title">
+                    <h2>Age</h2>
+                </div>
+
+                <div class="age">
+                    <div class="form-group radio form-group-age">
+                        <input type="radio" id="u17" name="age" value="under 5">
+                        <label for="u17">17 and Under</label>
+                    </div>
+                    <div class="form-group radio form-group-age">
+                        <input type="radio" id="students" name="age" value="under 5">
+                        <label for="students">Students</label>
+                    </div>
+                    <div class="form-group radio form-group-age">
+                        <input type="radio" id="adults" name="age" value="under 5">
+                        <label for="adults">Adults</label>
+                    </div>
+                    <div class="form-group radio form-group-age">
+                        <input type="radio" id="seniors" name="age" value="under 5">
+                        <label for=seniors>Seniors</label>
+                    </div>
+                </div><!-- end age -->
+
+                <div class="form-section-title equipment-title">
+                    <h2>Rental Equipment:</h2>
+                </div>
+
+                <div class="rental-equipment">
+                    <div class="form-group select equipment-type">
+                        <label for="equipment">Equipment: </label>
+                        <select name="equipment" id="equipment">
                             <option>Snowboard boots</option>
                             <option>Snowboard</option>
                             <option>Ski boots</option>
                             <option>Skies</option>
-                            <option> Globes and glasses</option>    
-                        </optgroup>
-                    </select>
-                </div>
-    
-                <div class="location">
-                        <label for="location">Locations </label>
-                        <select name="location" id="location" placeholder=location>
-    
-                        <optgroup label="Location">
+                            <option>Globes and glasses</option>    
+                        </select>
+                    </div><!-- end form-group select -->
+                    <div class="form-group select equipment-type">
+                        <label for="shoe-size">Shoe Size: </label>
+                        <select name="shoe-size" id="shoe-size">
+                            <option>0</option>    
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>4.5</option>
+                            <option>5</option>
+                            <option>5.5</option>
+                            <option>6</option>
+                            <option>6.5</option>
+                            <option>7</option>
+                            <option>7.5</option>
+                            <option>8</option>
+                            <option>8.5</option>
+                            <option>9</option>
+                            <option>9.5</option>
+                            <option>10</option>
+                            <option>10.5</option>
+                            <option>11</option>
+                            <option>11.5</option>
+                            <option>12</option>
+                            <option>12.5</option>
+                            <option>13</option>
+                            <option>13.5</option>  
+                            <option>14</option>
+                            <option>14.5</option>
+                            <option>15</option>
+                            <option>15.5</option>
+                            <option>16</option>
+                            <option>16.5</option>    
+                        </select>
+                    </div><!-- end form-group select -->
+                    <div class="form-group select pick-up-location">
+                        <label for="location">Pick Up: </label>
+                        <select name="location" id="location">
                             <option>Location 1</option>
                             <option>Location 2</option>
                             <option>Location 3</option>
-                        </optgroup>
-    
                         </select>
-                </div>
-    
-                        
-                    
-                                    
-                                    
-                <div class="number_people">
-                        <label for="number_people">Number Of People:</label> 
-                        <input type="number" value="number_people">Number of people</input>
-                                        
-                </div>
-    
-    <!-- .......calender.................................. -->
-    
-    <div class="select_date">
-            <div class="calender">
-                    <label for="month">Month: </label>
-                    <select name="day" id="month" placeholder=calender>
+                    </div>
+                    <div class="form-group select month">
+                        <label for="month">Month: </label>
+                        <select name="day" id="month" placeholder=calender>
                             <option>January</option>
                             <option>February</option>
                             <option>March</option>
@@ -124,59 +169,49 @@
                             <option>October</option>
                             <option>November</option>
                             <option>December</option>
-                    </select>
-                </div>
-        
-        <div class="calender">
-            <label for="day">Day: </label>
-            <select name="day" id="day" placeholder=calender>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-            </select>
-        </div>
-    
-    
-                
-    
-    
-    
-    <!-- ......end calender -->
-                <div class="submitbutton">
+                        </select>
+                    </div>
+                    <div class="form-group select day">
+                            <label for="day">Day: </label>
+                            <select name="day" id="day" placeholder=calender>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                    </div>
+                </div><!-- end rental equipment --> 
+                <div class="form-group submit">
                         <input type="submit" value="Sign Up" >
                 </div>
-                    
-            
             </form>
-        </div>
             
         </main>
 
@@ -217,7 +252,6 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="activities.html">Activities</a></li>
-                            <!-- <li><a href="services.html">Services</a></li> -->
                             <li><a href="book.html">Book Now</a></li>
                         </ul>
                     </div>
